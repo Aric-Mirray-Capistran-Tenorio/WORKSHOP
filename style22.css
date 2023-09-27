@@ -1,0 +1,671 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+#header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/imgPrin.jpg);
+    background-size: 100% 100%;
+    border-radius: 0px 0px 10px 10px ;
+    color: #faf8f6;
+}
+#header #titulo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Gill Sans';
+    font-size: 3vw;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 25vh;
+    padding-bottom: 58px;
+}
+
+body {
+    background-color: rgb(35, 38, 38);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+  /*  
+width: 100vw;
+height: 60vh;
+max-width: 1218px;
+min-width: 320px;
+background-image: url('img/imgPrin.jpg');
+background-size: 100% 100%;
+border-radius: 10px;
+display: flex;
+justify-content: right;
+align-items: center;
+font-family: 'Gill Sans';
+font-size: 3vw;
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 25vh;
+    padding-bottom: 58px;
+}
+*/
+
+/*Barra de navegación (las paginas del programa, las opciones de los formulario)*/
+.menu {
+/*
+width: 100vw;
+height: 60vh;
+*/
+padding-top: 50px;
+padding-bottom: 20px;
+padding-left: 10px;
+display: inline;
+}
+.menu ul{
+list-style: none;
+font-weight: bold;
+font-size: 30px;
+}
+.opciones > li{
+position: relative;
+display: inline-block;
+}
+.opciones > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-family: "Times new roman";
+  text-decoration: none;
+}
+.opciones li a:hover {
+background: #ffffff;
+color: #010101;
+transition: all 1s;
+border-radius: 0px 18px 0px 18px;
+}
+/*Barra de navegacion del formulario*/
+/*submenu del formulario*/
+.sub1{
+position: absolute;
+visibility: hidden;
+}
+.sub1 li a{
+display: block;
+padding: 9px;
+color: #010101;
+font-weight: bold;
+font-size: 20px;
+font-family: "Times new roman";
+text-decoration: none;
+background-color:  #878686;
+}
+.opciones li:hover .sub1{
+visibility: visible;
+}
+.sub1 li a:hover{
+transition: all .2s;
+border: 3px inset  black;
+}
+/*submenu de las tablas*/
+.sub2{
+position: absolute;
+visibility: hidden;
+width: 100%;
+}
+.sub2 li a{
+display: block;
+padding: 9px;
+color: #010101;
+background-color: #878686;
+font-weight: bold;
+font-size: 20px;
+font-family: "Times new roman";
+text-decoration: none;
+}
+.opciones li:hover .sub2{
+visibility: visible;
+}
+.sub2 li a:hover{
+transition: all .2s;
+border: 3px inset  black;
+}
+
+/*contenido del inicio*/
+.lineaproductos{
+    margin-top:50px;
+    width: 98vw;
+    height: 100%;
+    
+}
+.contelineaproductos{
+    padding-top: 25px;
+    padding-left: 15px;
+    margin-top: 25px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lineaproductos  #continicio{
+    border: 1px solid wheat;
+    border-radius: 5%;
+    width: 100px;
+    width: calc((100% - 50px)/3);
+    flex: none;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 2em 0;
+    color: rgb(219, 219, 0);
+    box-shadow: inset 5px -4px 2px gray;
+}
+.lineaproductos  #continicio:hover{
+    /*border: 4px dashed gray;*/
+    border: 2px solid wheat;
+    box-shadow: inset 3px -4px 2px rgb(255, 255, 255);
+}
+.lineaproductos h1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(220, 70, 0);
+    flex: none;
+}
+#btnproducto{
+    margin-top:30px;
+    font-weight: bold;
+    font-family: 'Gill Sans MT';
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100px;
+    border: 3px solid rgb(222, 222, 222);
+    background-color: #878686;
+    box-shadow: inset 2px 2px 4px  rgb(222, 222, 222);
+}
+#btnproducto button:hover{
+    border: 3px solid rgb(24, 24, 24);
+    background-color: #cccccc;
+    box-shadow: inset 2px 2px 4px  rgb(61, 51, 51);
+    transform: all .5s;
+}
+
+/*informacion inicial*/
+.cont1{
+    padding-top: 20px;
+    padding-left: 15%;
+    display: flex;
+    align-items: center;
+}
+.infoinicio{
+    margin-left: 20px;
+    width: 50vw;
+    color: #d8c3b8;
+    font-size: 24px;
+}
+.infologo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 40vh;
+    border: 5px rgb(0, 0, 0) double;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+/*Contenido Conocenos*/
+.contenido {
+    margin: auto;
+    width: 100vw;
+    max-width: 1218px;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contenido #text1 {
+        
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: bisque;
+    text-shadow: 1px 3px 5px rgb(130, 130, 130);
+}
+
+.contenido .imgin {
+    width: 40%;
+    height: 60%;
+    border-radius: 0px 40px 0px 40px;
+    margin: 50px;
+    box-shadow: 5px -4px 10px rgb(130, 130, 130);
+}
+
+#Mision {
+    margin-left: 12%;
+    margin-top: 5%;
+    width: 100vw;
+    max-width: 1218px;
+    min-width: 320px;
+    color: rgb(127, 127, 147);
+    font-size: 30px;
+}
+
+#Mision h2{
+    margin-left: 30%;
+}
+
+.contmision {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    color: bisque;
+    text-shadow: 1px 2px 3px rgb(130, 130, 130);
+}
+.contmision .imgin {
+    width: 40%;
+    height: 60%;
+    border-radius: 0px 40px 0px 40px;
+    margin: 50px;
+    box-shadow: 5px 3px 6px rgb(130, 130, 130);
+}
+.contmision #text2{
+    font-size: 20px;
+    width: 40%;
+}
+
+#Vision {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    margin: auto;
+    width: 100vw;
+    max-width: 1218px;
+    min-width: 320px;
+    color: rgb(127, 127, 147);
+    font-size: 30px;
+}
+#Vision h2{
+   padding-left: 35%;
+}
+.contvision {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    color: bisque;
+    text-shadow: 1px 2px 3px rgb(130, 130, 130);
+}
+.contvision .imgin {
+    width: 40%;
+    height: 60%;
+    border-radius: 0px 40px 0px 40px;
+    margin: 50px;
+    box-shadow: 5px 3px 6px rgb(130, 130, 130);
+}
+.contvision #text2{
+    font-size: 20px;
+    width: 40%;
+}
+
+/*Formularios*/
+/*Formulario Producto*/
+.form1{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form1 h1{
+color: rgb(245, 97, 6);
+}
+.form1 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+width: 110%;
+}
+.form1 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form1 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form1 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+}
+/*Formulario Tecnicos*/
+.form2{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form2 h1{
+color: rgb(245, 97, 6);
+}
+.form2 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+}
+.form2 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form2 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form2 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+}
+/*Formulario Taller*/
+.form3{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form3 h1{
+color: rgb(245, 97, 6);
+}
+.form3 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+}
+.form3 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form3 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form3 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+}
+/*Formulario Ventas*/
+.form4{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form4 h1{
+color: rgb(245, 97, 6);
+}
+.form4 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+}
+.form4 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form4 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form4 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+}
+/*Formulario Cliente*/
+.form5{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form5 h1{
+color: rgb(245, 97, 6);
+}
+.form5 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+}
+.form5 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form5 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form5 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+}
+/*Formulario Vendedores */
+.form6{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px outset;
+    color: aliceblue;
+}
+.form6 h1{
+color: rgb(245, 97, 6);
+}
+.form6 input, textarea{
+display: flex;
+align-items: center;
+border-radius: 5px;
+border: 3px groove;
+}
+.form6 button{
+    margin-left: 5%;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #878686;
+    border: 4px inset white;
+}
+.form6 button:hover{
+color: #000000;
+background-color: #ffffff;
+border: 4px inset rgb(18, 18, 18);
+transition: all .5s;
+}
+.form6 #op1, #op2, #op3, #op4, #op5, #op6, #op7, #op8{
+padding: 10px;
+font-size: 20px;
+
+}
+/*ubicacion*/
+.ubica{
+width:  90vw;
+padding: 20px;
+place-items: center;
+display: grid;
+} 
+
+.ubica h2{
+    color: rgb(127, 127, 147);
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+iframe{
+    margin:  auto;
+    border-radius: 20px;
+}
+
+.presentacion{
+    background-image: url(img/fondotargeta.png);
+    border-radius: 7%;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    margin: auto;
+}
+
+/*WebMaster*/
+#datosper{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#datosper h2{
+    font-size: 20px;
+    font-family: "Georgia";
+    color: #b3b1b1;
+}
+#datosper p{
+    font-size: 13px;
+    font-family: "Georgia";
+    color: rgb(255, 255, 255);
+}
+
+#datosgen{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#datosgen h2{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: rgb(212, 85, 0);
+}
+
+#datosgen .tex{
+  color: rgb(255, 255, 255);
+}
+
+/*Tablas*/
+.tablas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50vw;
+    height: 60vh;
+    border: 5px  white double;
+  }
+
+.tablas h1{
+    font-size: 50px;
+    font-family: Lucida Bright;
+    color: #df4700;
+}  
+.imagen {
+    padding-top: 25px;
+    width: 90%;
+    height: 70%;
+  }
+
+
+footer {
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(17, 17, 17);
+    width: 55vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px white solid;
+    border-radius: 30%;
+    /*
+    margin-top: auto;
+    background-color: rgb(17, 17, 17);
+    width: 55vw;
+    height: 10vh;
+    margin: 20px;
+    border: 3px white solid;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+footer .footer{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Garamond;
+}
